@@ -1,0 +1,36 @@
+<div class="banner">
+
+  <span class="main-title">Hello hi hello hello!</span>
+
+  <span class="alternative-title">there theeeree er err rrr</span>
+
+</div>
+
+
+<style>
+  .banner {
+    background-image: url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-rows: repeat(14, 1fr);
+    grid-template-columns: repeat(30, 1fr);
+  }
+
+  .main-title {
+    font-size: 2rem;
+    color: red;
+
+    grid-column: 10/12;
+    grid-row: 6/10;
+  }
+
+  .alternative-title {
+    font-size: 1.5rem;
+    color: blue;
+    grid-column: 10/12;
+    grid-row: 10/12;
+  }
+</style>

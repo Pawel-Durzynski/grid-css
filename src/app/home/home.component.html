@@ -1,0 +1,62 @@
+
+<div class="container" style="display:flex;"> 
+  <div class="card" style="width: 55rem;">
+    <div class="card-header">
+        Jednostki długości
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">bezwzględne: cm, mm, in, pt, pc, px </li>
+      <li class="list-group-item">
+          względne:<br> <strong>%</strong> <br>
+    <strong>vw, vh, vmin, vmax</strong> - procentowa wartość rozmiaru przeglądarki, zależna od rozdzielczości urządzenia<br>
+       <strong> em, rem</strong> - relatywne do użytej czcionki danego elementu lub elementu najwyższego poziomu<br>
+       <strong>ch</strong>  - szerokość znaku "0"
+    </li>
+    <li class="list-group-item">
+       <strong> nowe w grid css</strong><br>
+        <strong>fr</strong> - część dostępnej białej przestrzeni<br>
+       <strong>auto</strong> - automatczne dobranie wartości</li>
+       <li class="list-group-item">
+       <a href="https://www.w3schools.com/cssref/css_units.asp" class="btn btn-info" target="_blank" >https://www.w3schools.com</a></li>
+
+    </ul>
+  </div>
+  <div class="card" style="width: 55rem;">
+    <div class="card-header">
+       Konwencje Nazewnictwa CSS
+    </div>
+    <ul class="list-group list-group-flush">
+   
+      <li class="list-group-item">
+        <strong>kebab-case</strong> </li>
+        <li class="list-group-item"><strong> używanie zawartości</strong>, żeby znaleźć nazwę np. .editOvRma na .edit-ov-rma-form, .migrationColor na
+            .migration-symbol</li>
+        
+            <li class="list-group-item"> <strong>używanie konwencji BEM</strong> np. prefix o - object, c - component, u - utilities, is- , has- states np.
+       .editOvRma na .c-edit-ov-rma-form, .migrationColor na .o-migration-symbol, .user-guide-container na
+       .c-user-guide</li>
+       <li class="list-group-item">
+        <a href="http://bdavidxyz.com/blog/how-to-name-css-classes/" class="btn btn-info" target="_blank" >http://bdavidxyz.com</a></li>
+    </ul>
+  </div>
+  <div class="card" style="width: 55rem;">
+<div class="card-header">
+    Escapowanie Znaków W LESS
+</div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"> grid-column: 1/2; => grid-column: 1 e('/') 2;</li>
+</ul>
+</div>
+</div>
+
+
+
+<style>
+    .container {
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+ </style>  
+ 

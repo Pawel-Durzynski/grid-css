@@ -1,0 +1,102 @@
+<div class="articles">
+  <div class="article">
+    <h2 class="title">Title</h2>
+    <img src="https://cdn.pixabay.com/photo/2016/09/06/18/22/visitors-1649815_960_720.jpg" />
+    <p class="desc">asd asd asd ads d asdas asdas</p>
+    <a class="button">Click me</a>
+  </div>
+
+  <div class="article large">
+    <h2 class="title">Title</h2>
+    <img src="https://cdn.pixabay.com/photo/2015/03/26/09/44/mona-lisa-690203_960_720.jpg" />
+    <p class="desc">asd asd asd ads d asdas asdas asd asd asd ads d asdas asdas asd asd asd ads d asdas asdas asd asd
+      asd ads d asdas asdas asd asd asd ads d asdas asdas asdas asd asd asd ads d asdas asdas asdas asd asd asd ads d
+      asd ads d asdas asdas asd asd asd ads d asdas asdas asdas asd asd asd ads d asdas asdas asdas asd asd asd ads d
+      asdas asdas</p>
+    <a class="button">Click me</a>
+  </div>
+
+  <div class="article large">
+    <h2 class="title">Title</h2>
+    <img src="https://cdn.pixabay.com/photo/2020/04/20/08/25/art-gallery-5067113_960_720.jpg" />
+    <p class="desc">asd asd asd ads d asdas asdas asd asd asd ads d asdas asdas asdas asd asd asd ads d asdas asda asdas
+      asd asd asd ads d asdas asda</p>
+    <a class="button">Click me</a>
+  </div>
+
+  <div class="article">
+    <h2 class="title">Title</h2>
+    <img
+      src="https://media.istockphoto.com/photos/bearded-man-looking-at-paintings-in-art-gallery-picture-id1196980545" />
+    <p class="desc">asd asd asd ads d asdas asdas</p>
+    <a class="button">Click me</a>
+  </div>
+
+  <div class="article">
+    <h2 class="title">Title</h2>
+    <img src="https://cdn.pixabay.com/photo/2016/09/06/18/22/visitors-1649815_960_720.jpg" />
+    <p class="desc">asd asd asd ads d asdas asdas</p>
+    <a class="button">Click me</a>
+  </div>
+
+  <div class="article">
+    <h2 class="title">Title</h2>
+    <img src="https://cdn.pixabay.com/photo/2015/03/26/09/44/mona-lisa-690203_960_720.jpg" />
+    <p class="desc">asd asd asd ads d asdas asdas asd asd asd ads d asdas asdas asd asd asd ads d asdas asdas asd asd
+      asd ads d asdas asdas asd asd asd ads d asdas asdas asdas asd asd asd ads d asdas asdas asdas asd asd asd ads d
+      asd ads d asdas asdas asd asd asd ads d asdas asdas asdas asd asd asd ads d asdas asdas asdas asd asd asd ads d
+      asdas asdas</p>
+    <a class="button">Click me</a>
+  </div>
+
+  <div class="article">
+    <h2 class="title">Title</h2>
+    <img src="https://cdn.pixabay.com/photo/2020/04/20/08/25/art-gallery-5067113_960_720.jpg" />
+    <p class="desc">asd asd asd ads d asdas asdas asd asd asd ads d asdas asdas asdas asd asd asd ads d asdas asda asdas
+      asd asd asd ads d asdas asda</p>
+    <a class="button">Click me</a>
+  </div>
+
+  <div class="article">
+    <h2 class="title">Title</h2>
+    <img
+      src="https://media.istockphoto.com/photos/bearded-man-looking-at-paintings-in-art-gallery-picture-id1196980545" />
+    <p class="desc">asd asd asd ads d asdas asdas</p>
+    <a class="button">Click me</a>
+  </div>
+</div>
+
+<style>
+  img {
+    max-width: 100%;
+  }
+
+  .articles {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+    --grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+
+  .article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr;
+    align-items: start;
+  }
+
+  .article.large {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .article .button {
+    background-color: #5FB0BE;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+
+    align-self: end;
+  }
+</style>
